@@ -19,31 +19,26 @@
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VNH-JG-EyG">
                                 <rect key="frame" x="60" y="194" width="294" height="468"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="DyG-sp-h40"/>
-                                    <constraint firstAttribute="width" secondItem="VNH-JG-EyG" secondAttribute="height" multiplier="15:8" id="O8b-To-Zjd"/>
-                                    <constraint firstAttribute="height" constant="128" id="SzS-Fl-YvA"/>
-                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Ew2-38-RcF" appends="YES" id="aot-ud-9Pn"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxl-MU-X0p">
-                                <rect key="frame" x="222" y="732" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxl-MU-X0p">
+                                <rect key="frame" x="170" y="732" width="74" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8w2-T1-gjS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHm-mT-wKH">
-                                <rect key="frame" x="318" y="732" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHm-mT-wKH">
+                                <rect key="frame" x="302" y="732" width="31" height="30"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
                                     <action selector="slideShowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WWh-Vh-ym2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScA-zP-NcJ">
-                                <rect key="frame" x="59" y="732" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScA-zP-NcJ">
+                                <rect key="frame" x="70" y="732" width="31" height="30"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="naxt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bqw-d5-1bX"/>
@@ -53,19 +48,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vHm-mT-wKH" secondAttribute="trailing" constant="50" id="4MD-OV-iqM"/>
+                            <constraint firstItem="wxl-MU-X0p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="150" id="6Kc-xQ-ufE"/>
                             <constraint firstItem="VNH-JG-EyG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="9Jb-D9-ke2"/>
-                            <constraint firstItem="ScA-zP-NcJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="GTD-XJ-rRn"/>
-                            <constraint firstItem="wxl-MU-X0p" firstAttribute="leading" secondItem="ScA-zP-NcJ" secondAttribute="trailing" constant="65" id="H6v-0Q-tXK"/>
+                            <constraint firstItem="ScA-zP-NcJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="GTD-XJ-rRn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ScA-zP-NcJ" secondAttribute="bottom" constant="100" id="K9t-H1-WiF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vHm-mT-wKH" secondAttribute="bottom" constant="100" id="KcG-hQ-ccC"/>
-                            <constraint firstItem="vHm-mT-wKH" firstAttribute="leading" secondItem="wxl-MU-X0p" secondAttribute="trailing" constant="65" id="N0e-Pg-tBm"/>
                             <constraint firstItem="VNH-JG-EyG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="br6-Fg-RJd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vHm-mT-wKH" secondAttribute="trailing" constant="81" id="c93-Lp-qB4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VNH-JG-EyG" secondAttribute="bottom" constant="200" id="gF2-Q4-LZy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vHm-mT-wKH" secondAttribute="bottom" constant="250" id="hXT-H5-swp"/>
                             <constraint firstItem="vHm-mT-wKH" firstAttribute="leading" secondItem="wxl-MU-X0p" secondAttribute="trailing" constant="100" id="i6s-vK-bJF"/>
                             <constraint firstItem="wxl-MU-X0p" firstAttribute="top" secondItem="VNH-JG-EyG" secondAttribute="bottom" constant="130" id="jxy-KS-xhg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wxl-MU-X0p" secondAttribute="bottom" constant="100" id="qHE-ey-sF2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wxl-MU-X0p" secondAttribute="trailing" constant="150" id="xtH-L2-Pcf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VNH-JG-EyG" secondAttribute="trailing" constant="60" id="z0G-GJ-xhx"/>
                         </constraints>
                         <variation key="default">
